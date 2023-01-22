@@ -1,0 +1,520 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.board {
+    height: 500px;
+    width: 500px;
+    /*border: 4px solid black;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 8px;
+    margin-bottom: 65px;
+}
+
+label[class^='O'] {
+    display: none;
+}
+
+div[class^='box'] {
+    border: 3px solid black;
+    border-radius: 8px;
+}
+
+input{
+    display: none;
+}
+
+label {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    font-weight: 400;
+    opacity: 0;
+    user-select: none
+}
+
+/**
+    *  DISABLE CLICKED LABELS AND SHOW CLICKED LABELS
+ */
+
+/**
+** BOX1
+ */
+
+input#x1:checked ~ .board .X1 {
+    opacity: 1;
+    pointer-events: none;
+    display: flex !important;
+}
+
+input#x1:checked ~ .board .O1 {
+    display: none !important;
+    pointer-events: none;
+}
+
+input#o1:checked ~ .board .O1 {
+    opacity: 1;
+    pointer-events: none;
+    display: flex !important;
+}
+
+input#o1:checked ~ .board .X1 {
+    display: none !important;
+    pointer-events: none;
+}
+
+/**
+** BOX2
+ */
+
+input#x2:checked ~ .board .X2 {
+    opacity: 1;
+    pointer-events: none;
+    display: flex !important;
+}
+
+input#x2:checked ~ .board .O2 {
+    display: none !important;
+    pointer-events: none;
+}
+
+input#o2:checked ~ .board .O2 {
+    opacity: 1;
+    pointer-events: none;
+    display: flex !important;
+}
+
+input#o2:checked ~ .board .X2 {
+    display: none !important;
+    pointer-events: none;
+}
+
+/**
+** BOX3
+ */
+
+input#x3:checked ~ .board .X3 {
+    opacity: 1;
+    pointer-events: none;
+    display: flex !important;
+}
+
+input#x3:checked ~ .board .O3 {
+    display: none !important;
+    pointer-events: none;
+}
+
+input#o3:checked ~ .board .O3 {
+    opacity: 1;
+    pointer-events: none;
+    display: flex !important;
+}
+
+input#o3:checked ~ .board .X3 {
+    display: none !important;
+    pointer-events: none;
+}
+
+/**
+** BOX4
+ */
+
+input#x4:checked ~ .board .X4 {
+    opacity: 1;
+    pointer-events: none;
+    display: flex !important;
+}
+
+input#x4:checked ~ .board .O4 {
+    display: none !important;
+    pointer-events: none;
+}
+
+input#o4:checked ~ .board .O4 {
+    opacity: 1;
+    pointer-events: none;
+    display: flex !important;
+}
+
+input#o4:checked ~ .board .X4 {
+    display: none !important;
+    pointer-events: none;
+}
+
+/**
+** BOX5
+ */
+
+input#x5:checked ~ .board .X5 {
+    opacity: 1;
+    pointer-events: none;
+    display: flex !important;
+}
+
+input#x5:checked ~ .board .O5 {
+    display: none !important;
+    pointer-events: none;
+}
+
+input#o5:checked ~ .board .O5 {
+    opacity: 1;
+    pointer-events: none;
+    display: flex !important;
+}
+
+input#o5:checked ~ .board .X5 {
+    display: none !important;
+    pointer-events: none;
+}
+
+/**
+** BOX6
+ */
+
+input#x6:checked ~ .board .X6 {
+    opacity: 1;
+    pointer-events: none;
+    display: flex !important;
+}
+
+input#x6:checked ~ .board .O6 {
+    display: none !important;
+    pointer-events: none;
+}
+
+input#o6:checked ~ .board .O6 {
+    opacity: 1;
+    pointer-events: none;
+    display: flex !important;
+}
+
+input#o6:checked ~ .board .X6 {
+    display: none !important;
+    pointer-events: none;
+}
+
+/**
+** BOX7
+ */
+
+input#x7:checked ~ .board .X7 {
+    opacity: 1;
+    pointer-events: none;
+    display: flex !important;
+}
+
+input#x7:checked ~ .board .O7 {
+    display: none !important;
+    pointer-events: none;
+}
+
+input#o7:checked ~ .board .O7 {
+    opacity: 1;
+    pointer-events: none;
+    display: flex !important;
+}
+
+input#o7:checked ~ .board .X7 {
+    display: none !important;
+    pointer-events: none;
+}
+
+/**
+** BOX8
+ */
+
+input#x8:checked ~ .board .X8 {
+    opacity: 1;
+    pointer-events: none;
+    display: flex !important;
+}
+
+input#x8:checked ~ .board .O8 {
+    display: none !important;
+    pointer-events: none;
+}
+
+input#o8:checked ~ .board .O8 {
+    opacity: 1;
+    pointer-events: none;
+    display: flex !important;
+}
+
+input#o8:checked ~ .board .X8 {
+    display: none !important;
+    pointer-events: none;
+}
+
+/**
+** BOX9
+ */
+
+input#x9:checked ~ .board .X9 {
+    opacity: 1;
+    pointer-events: none;
+    display: flex !important;
+}
+
+input#x9:checked ~ .board .O9 {
+    display: none !important;
+    pointer-events: none;
+}
+
+input#o9:checked ~ .board .O9 {
+    opacity: 1;
+    pointer-events: none;
+    display: flex !important;
+}
+
+input#o9:checked ~ .board .X9 {
+    display: none !important;
+    pointer-events: none;
+}
+
+/*ENABLE X OR O LABELS BASED ON TURN ORDER*/
+/**
+    * 0 checked - X TURN
+ */
+
+label[class^='O'] {
+    display: none;
+}
+
+label[class^='X'] {
+    display: flex;
+}
+
+/**
+    * 1 checked - O TURN
+ */
+input:checked ~ .board label[class^='O'] {
+    display: flex;
+}
+
+input:checked ~ .board label[class^='X'] {
+    display: none;
+}
+
+/**
+    * 2 checked - X TURN
+ */
+input:checked ~ input:checked ~ .board label[class^='X'] {
+    display: flex;
+}
+
+input:checked ~ input:checked ~ .board label[class^='O'] {
+    display: none;
+}
+
+/**
+    * 3 checked - O TURN
+ */
+input:checked ~ input:checked ~ input:checked ~ .board label[class^='O'] {
+    display: flex;
+}
+
+input:checked ~ input:checked ~ input:checked ~ .board label[class^='X'] {
+    display: none;
+}
+
+
+/**
+    * 4 checked - X TURN
+ */
+input:checked ~ input:checked ~ input:checked ~ input:checked ~ .board label[class^='X'] {
+    display: flex;
+}
+
+input:checked ~ input:checked ~ input:checked ~ input:checked ~ .board label[class^='O'] {
+    display: none;
+}
+
+/**
+    * 5 checked - O TURN
+ */
+input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ .board label[class^='O'] {
+    display: flex;
+}
+
+input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ .board label[class^='X'] {
+    display: none;
+}
+
+/**
+    * 6 checked - X TURN
+ */
+input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ .board label[class^='X'] {
+    display: flex;
+}
+
+input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ .board label[class^='O'] {
+    display: none;
+}
+
+/**
+    * 7 checked - 0 TURN
+ */
+input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ .board label[class^='O'] {
+    display: flex;
+}
+
+input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ .board label[class^='X'] {
+    display: none;
+}
+
+/**
+    * 8 checked - X TURN
+ */
+input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ .board label[class^='X'] {
+    display: flex;
+}
+
+input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ .board label[class^='O'] {
+    display: none;
+}
+
+/**
+    * WIN CONDITIONS
+ */
+
+#x1:checked ~ #x2:checked ~ #x3:checked ~ .board :is(.X1,.X2,.X3) {
+    animation: win 1s infinite;
+}
+
+#x4:checked ~ #x5:checked ~ #x6:checked ~ .board :is(.X4,.X5,.X6) {
+    animation: win 1s infinite;
+}
+
+#x7:checked ~ #x8:checked ~ #x9:checked ~ .board :is(.X7,.X8,.X9) {
+    animation: win 1s infinite;
+}
+
+#x1:checked ~ #x4:checked ~ #x7:checked ~ .board :is(.X1,.X4,.X7) {
+    animation: win 1s infinite;
+}
+
+#x2:checked ~ #x5:checked ~ #x8:checked ~ .board :is(.X2,.X4,.X8) {
+    animation: win 1s infinite;
+}
+
+#x3:checked ~ #x6:checked ~ #x9:checked ~ .board :is(.X3,.X6,.X9) {
+    animation: win 1s infinite;
+}
+
+#x1:checked ~ #x5:checked ~ #x9:checked ~ .board :is(.X1,.X5,.X9) {
+    animation: win 1s infinite;
+}
+
+#x3:checked ~ #x5:checked ~ #x7:checked ~ .board :is(.X3,.X5,.X7) {
+    animation: win 1s infinite;
+}
+
+
+
+#o1:checked ~ #o2:checked ~ #o3:checked ~ .board :is(.O1,.O2,.O3) {
+    animation: win 1s infinite;
+}
+
+#o4:checked ~ #o5:checked ~ #o6:checked ~ .board :is(.O4,.O5,.O6) {
+    animation: win 1s infinite;
+}
+
+#o7:checked ~ #o8:checked ~ #o9:checked ~ .board :is(.O7,.O8,.O9) {
+    animation: win 1s infinite;
+}
+
+#o1:checked ~ #o4:checked ~ #o7:checked ~ .board :is(.O1,.O4,.O7) {
+    animation: win 1s infinite;
+}
+
+#o2:checked ~ #o5:checked ~ #o8:checked ~ .board :is(.O2,.O4,.O8) {
+    animation: win 1s infinite;
+}
+
+#o3:checked ~ #o6:checked ~ #o9:checked ~ .board :is(.O3,.O6,.O9) {
+    animation: win 1s infinite;
+}
+
+#o1:checked ~ #o5:checked ~ #o9:checked ~ .board :is(.O1,.O5,.O9) {
+    animation: win 1s infinite;
+}
+
+#o3:checked ~ #o5:checked ~ #o7:checked ~ .board :is(.O3,.O5,.O7) {
+    animation: win 1s infinite;
+}
+
+h1{
+    visibility: hidden;
+}
+
+:is(#o1:checked ~ #o2:checked ~ #o3:checked,
+    #o4:checked ~ #o5:checked ~ #o6:checked,
+    #o7:checked ~ #o8:checked ~ #o9:checked,
+    #o1:checked ~ #o4:checked ~ #o7:checked,
+    #o2:checked ~ #o5:checked ~ #o8:checked,
+    #o3:checked ~ #o6:checked ~ #o9:checked,
+    #o1:checked ~ #o5:checked ~ #o9:checked,
+    #o3:checked ~ #o5:checked ~ #o7:checked
+    ) ~ h1.O {
+    visibility: visible;
+}
+
+:is(#x1:checked ~ #x2:checked ~ #x3:checked,
+    #x4:checked ~ #x5:checked ~ #x6:checked,
+    #x7:checked ~ #x8:checked ~ #x9:checked,
+    #x1:checked ~ #x4:checked ~ #x7:checked,
+    #x2:checked ~ #x5:checked ~ #x8:checked,
+    #x3:checked ~ #x6:checked ~ #x9:checked,
+    #x1:checked ~ #x5:checked ~ #x9:checked,
+    #x3:checked ~ #x5:checked ~ #x7:checked
+    ) ~ h1.X {
+    visibility: visible;
+}
+
+:is(#o1:checked ~ #o2:checked ~ #o3:checked,
+    #o4:checked ~ #o5:checked ~ #o6:checked,
+    #o7:checked ~ #o8:checked ~ #o9:checked,
+    #o1:checked ~ #o4:checked ~ #o7:checked,
+    #o2:checked ~ #o5:checked ~ #o8:checked,
+    #o3:checked ~ #o6:checked ~ #o9:checked,
+    #o1:checked ~ #o5:checked ~ #o9:checked,
+    #o3:checked ~ #o5:checked ~ #o7:checked,
+    #x1:checked ~ #x2:checked ~ #x3:checked,
+    #x4:checked ~ #x5:checked ~ #x6:checked,
+    #x7:checked ~ #x8:checked ~ #x9:checked,
+    #x1:checked ~ #x4:checked ~ #x7:checked,
+    #x2:checked ~ #x5:checked ~ #x8:checked,
+    #x3:checked ~ #x6:checked ~ #x9:checked,
+    #x1:checked ~ #x5:checked ~ #x9:checked,
+    #x3:checked ~ #x5:checked ~ #x7:checked
+    ) ~ .board {
+    pointer-events: none;
+}
+
+
+
+
+@keyframes win {
+    0% {
+        background-color: green;
+        color: black;
+    }
+    50% {
+        background-color: black;
+        color: green;
+    }
+    100% {
+        background-color: green;
+        color: black;
+    }
+}
