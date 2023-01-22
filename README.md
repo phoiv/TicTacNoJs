@@ -1,2 +1,4 @@
+## play here https://phoiv.github.io/TicTacNoJs/
+
 # TicTacNoJs
-Tic Tac Toe with just Html and Css
+Tic Tac Toe made only with Html and Css.
