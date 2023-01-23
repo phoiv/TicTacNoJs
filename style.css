@@ -387,6 +387,16 @@ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ 
     * WIN CONDITIONS
  */
 
+input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ .board{
+    pointer-events: none;
+}
+
+input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ .D{
+   visibility: visible;
+}
+
+
+
 #x1:checked ~ #x2:checked ~ #x3:checked ~ .board :is(.X1,.X2,.X3) {
     animation: win 1s infinite;
 }
@@ -437,7 +447,7 @@ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ 
     animation: win 1s infinite;
 }
 
-#o2:checked ~ #o5:checked ~ #o8:checked ~ .board :is(.O2,.O4,.O8) {
+#o2:checked ~ #o5:checked ~ #o8:checked ~ .board :is(.O2,.O5,.O8) {
     animation: win 1s infinite;
 }
 
